@@ -52,14 +52,44 @@ export const useAuthentication = () => {
       } else {
         systemErrorMessage = "An error has occurred. Try again later."
       }
+      setLoading(false)
       setError(systemErrorMessage)
     }
+  }
 
-    setLoading(false)
+  // lougout / sign out
+  const logout = () => {
+    checkIfIsCancelled()
+    signOut(auth)
+  }
+
+  // login - sign in
+  const login = async(data) => {
+    checkIfIsCancelled()
+    setLoading(true)
+    setError(false)
+
+    try{
+      await signInWithEmailAndPassword(auth, data.email, data.password)
+      setLoading(false)
+
+    }catch(error){
+      let systemErrorMessage
+      if (error.message.includes('user-not-found')) {
+        systemErrorMessage = "User not found."
+      }else if(error.message.includes('wrong-password')){
+        systemErrorMessage = "Incorrect password"
+      }else{
+        systemErrorMessage = "An error has occurred. Try again later."
+      }
+      setError(systemErrorMessage)
+      setLoading(false)
+
+    }
   }
 
   useEffect(() => {
     return () => setCancelled(true)
   }, [])
-  return { auth, createUser, error, loading }
+  return { auth, createUser, error, loading, logout, login }
 }
