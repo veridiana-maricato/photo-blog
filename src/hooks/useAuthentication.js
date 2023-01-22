@@ -1,5 +1,3 @@
-import { db } from '../firebase/config'
-
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -39,6 +37,7 @@ export const useAuthentication = () => {
       await updateProfile(user, {
         displayName: data.displayName,
       });
+
       return user
     } catch (error) {
       console.log(error.message)
@@ -52,9 +51,10 @@ export const useAuthentication = () => {
       } else {
         systemErrorMessage = "An error has occurred. Try again later."
       }
-      setLoading(false)
+    
       setError(systemErrorMessage)
     }
+    setLoading(false)
   }
 
   // lougout / sign out
@@ -64,22 +64,22 @@ export const useAuthentication = () => {
   }
 
   // login - sign in
-  const login = async(data) => {
+  const login = async (data) => {
     checkIfIsCancelled()
     setLoading(true)
     setError(false)
 
-    try{
+    try {
       await signInWithEmailAndPassword(auth, data.email, data.password)
       setLoading(false)
 
-    }catch(error){
+    } catch (error) {
       let systemErrorMessage
       if (error.message.includes('user-not-found')) {
         systemErrorMessage = "User not found."
-      }else if(error.message.includes('wrong-password')){
+      } else if (error.message.includes('wrong-password')) {
         systemErrorMessage = "Incorrect password"
-      }else{
+      } else {
         systemErrorMessage = "An error has occurred. Try again later."
       }
       setError(systemErrorMessage)
