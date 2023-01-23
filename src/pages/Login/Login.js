@@ -1,7 +1,6 @@
 import styles from './Login.module.css'
 
 import { useState, useEffect } from 'react'
-import { AuthErrorCodes } from 'firebase/auth'
 import { useAuthentication } from '../../hooks/useAuthentication'
 
 
