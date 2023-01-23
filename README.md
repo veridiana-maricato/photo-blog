@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Home Page
 
+![Home Page Image] ("https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Home.png")
+
 
 ## Available Features
 
