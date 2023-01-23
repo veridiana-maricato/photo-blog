@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Home Page
 
-<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Home.png" alt="Home Page Image" style="height: 500px;"/>
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Home.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Home-not-logged.png)
 
 
 
