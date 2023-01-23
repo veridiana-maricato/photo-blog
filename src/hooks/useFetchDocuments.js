@@ -23,24 +23,23 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             try {
                 let q
 
-                // search
-
-                // dashboard
-
-                if(search){
+                if (search) {
+                    // search
                     q = await query(collectionRef, where('tagsArray', 'array-contains', search), orderBy('createdAt', 'desc'))
 
-                }else{
+                } else if (uid) {
+                    // dashboard
+                    q = await query(collectionRef, where('uid', '==', uid), orderBy('createdAt', 'desc'))
+
+                } else {
                     q = await query(collectionRef, orderBy('createdAt', 'desc'))
                 }
 
-
-                await onSnapshot(q, (QuerySnapshot) => { 
+                await onSnapshot(q, (QuerySnapshot) => {
                     setDocuments(
                         QuerySnapshot.docs.map((doc) => ({
                             id: doc.id,
                             ...doc.data(),
-
                         }))
                     )
                 })
@@ -51,11 +50,10 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
                 console.log(error)
                 setError(error.message)
                 setLoading(false)
-
             }
         }
         loadData()
-    }, [docCollection, documents, search, uid, cancelled])
+    }, [docCollection, search, uid, cancelled])
 
     useEffect(() => {
         return () => setCancelled(true)
