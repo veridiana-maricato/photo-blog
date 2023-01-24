@@ -12,33 +12,33 @@ If the 'see full post' button is clicked, the user is taken to a page that prese
 
 ## Post details
 
-[https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Home-not-logged.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/FullPostLakeHouse.png)
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Home-not-logged.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/FullPostLakeHouse.png)
 
 In the About page, the user can see that the website was created with React and Firebase, and click on the button to create a new post. If the user is not logged yet, they will be redirected to the log in page.
 
 ## About us page
 
-([https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/FullPostLakeHouse.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png)
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/FullPostLakeHouse.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png)
 
 ## Log in page
 
-[https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Login.png)
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Login.png)
 
 In this page, the user can log in by writting their e-mail and password, which will then be pulled from Firebase's database and verified. If they're both correct, the user will be logged.
 
 Although, if the user is not registered yet, they can do it so through the register page:
 
-[https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Register.png)
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Register.png)
 
 The password has to be at least six characters, and it has to be identical to the confirm password input.
 
 Once the user is logged in, the navigation bar will be different: the login and registration buttons will no longer be displayed and there will be two new options available: create a new post and go to the user's dashboard.
 
-[https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/CreatePost.png)
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/CreatePost.png)
 
 ## Create a new post
 
-[https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/CreatePost.png)
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/About.png" alt="Home Page Image" style="height: 500px;"/>](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/CreatePost.png)
 
 To create a new post, the user will have to insert the post details, such as title, the image URL, the post content and tags. All of these details will be verified. If the URL isn't valid, for exemple, the post will not be created. All inputs must be filled correctly. 
 
@@ -46,7 +46,7 @@ Once the post is created, the user will be redirected to the Home page and they'
 
 To see all the posts that they created, the user must navigate to the dashboard page:
 
-[https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/CreatePost.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Dashboard.png
+[<img src="https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/CreatePost.png](https://github.com/veridiana-maricato/photo-blog/blob/main/src/assets/img/Dashboard.png
 
 
 
