@@ -97,6 +97,9 @@ In case of sensitive bugs like security vulnerabilities, please contact maricato
 ## Versioning
 1.0.0.0
 
+## Acknowledgments
+Matheus Battisti, creator of the course that made the production of this project possible
+
 ## Authors
 **Veridiana Maricato**
 
